@@ -1,0 +1,90 @@
+[
+  {
+    "id": "p01",
+    "nome": "Tampa de Plástico Descartável / Toucas de Alimentos 100/200/300 un",
+    "preco": 9.49,
+    "desconto": "-53%",
+    "vendidos": "70 mil+",
+    "categoria": "casa",
+    "badge": "Mais vendido",
+    "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-81ztc-mjijmrzn5jb748.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p02",
+    "nome": "BICARBONATO DE SÓDIO 1Kg 100% PURO",
+    "preco": 16.90,
+    "desconto": "-16%",
+    "vendidos": "60 mil+",
+    "categoria": "casa",
+    "badge": "Mais vendido",
+    "imagem": "https://down-zl-br.img.susercontent.com/br-11134207-820lz-mr7x31w9b9xh26.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p03",
+    "nome": "Kit Organizador de Cabos 3D Premium — Acabe com a bagunça de fios na mesa",
+    "preco": 17.99,
+    "desconto": null,
+    "vendidos": "2",
+    "categoria": "tech",
+    "badge": "Novidade",
+    "imagem": "https://down-tx-br.img.susercontent.com/br-11134207-820lf-mnbrj8j1ntvkca.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p04",
+    "nome": "Farinha de Castanha de Caju 1kg — sem glúten, artesanal",
+    "preco": 18.85,
+    "desconto": null,
+    "vendidos": "974",
+    "categoria": "alimentos",
+    "badge": null,
+    "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820ln-mqkilx6butj431.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p05",
+    "nome": "Babuche Feminina EVA com Pingentes e Corrente — Leve e Antiderrapante",
+    "preco": 31.67,
+    "desconto": "-54%",
+    "vendidos": "7 mil+",
+    "categoria": "moda",
+    "badge": "Acabou rápido",
+    "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820lt-mrpdjfz6pgxy60.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p06",
+    "nome": "Kits de Sabão Líquido Casa de 20L — Blend 1 e 2 MOMUSUNI Premium",
+    "preco": 59.90,
+    "desconto": null,
+    "vendidos": "9 mil+",
+    "categoria": "casa",
+    "badge": "Fixado",
+    "imagem": "https://down-tx-br.img.susercontent.com/br-11134207-820lf-mlry6swe21vq1d.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p07",
+    "nome": "Sandália Tamanco Ortopédico Feminino Conforto Mazzaro 01",
+    "preco": 59.90,
+    "desconto": "-54%",
+    "vendidos": "4 mil+",
+    "categoria": "moda",
+    "badge": "Acabou rápido",
+    "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820lm-mqhx7dp5pp1db8.avif",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  },
+  {
+    "id": "p08",
+    "nome": "Calça Masculina Reta Tradicional Básica",
+    "preco": 52.90,
+    "desconto": null,
+    "vendidos": "527",
+    "categoria": "moda",
+    "badge": null,
+    "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lsss0fp6ziuc66_tn.webp",
+    "link": "https://collshp.com/josmarstore?view=storefront"
+  }
+]
