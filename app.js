@@ -25,6 +25,7 @@ async function carregar() {
     return;
   }
   renderCarrossel();
+  renderMarqueeProducts();
   renderDestaque();
   renderCategory('casa', 'gridCasa');
   renderCategory('alimentos', 'gridAlimentos');
@@ -104,6 +105,23 @@ function renderCategory(cat, containerId) {
       </span>
     </a>`).join('');
   if (!slice.length) el('#' + containerId).innerHTML = '<p class="empty">Nada por aqui agora.</p>';
+}
+
+function renderMarqueeProducts() {
+  const track = el('#marqueeProducts');
+  if (!track) return;
+  const hot = produtos.filter((p) => p.preco != null).slice(0, 12);
+  if (!hot.length) return;
+  const htmlChip = (p) => `
+    <a class="product-ticker" href="${escapeAttr(p.link)}" rel="noopener sponsored nofollow" target="_blank" aria-label="Ver oferta de ${escapeAttr(p.nome)} na Shopee">
+      <img src="${escapeAttr(p.imagem)}" alt="" width="40" height="40" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" />
+      <span class="product-ticker-text">
+        <span class="product-ticker-name">${escapeHTML(p.nome)}</span>
+        <span class="product-ticker-price">${p.preco != null ? 'R$ ' + Number(p.preco).toFixed(2).replace('.', ',') : '<span class="product-ticker-unknown">Ver na Shopee</span>'}</span>
+      </span>
+    </a>`;
+  const html = hot.map(htmlChip).join('');
+  track.innerHTML = html + html;  // duplicate for seamless loop
 }
 
 function filtrar() {
