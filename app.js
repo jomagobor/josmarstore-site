@@ -3,107 +3,114 @@
 const state = { categoria: 'all', busca: '' };
 let produtos = [];
 
-const $ = (sel, ctx = document) => ctx.querySelector(sel);
-const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+const el = (sel, ctx = document) => ctx.querySelector(sel);
+const all = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
-const formatBRL = (v) =>
-  Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+const fmtBRL = (v) => Number(v).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-async function carregarProdutos() {
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+async function carregar() {
   try {
-    const res = await fetch('products.json?v=' + Date.now());
-    if (!res.ok) throw new Error('Falha ao carregar produtos');
-    produtos = await res.json();
-    render();
+    produtos = await fetch('products.json?v=' + Date.now()).then((r) => (r.ok ? r.json() : Promise.reject()));
   } catch (err) {
-    $('#grid').innerHTML = '<p class="empty">Não foi possível carregar as ofertas. Tente atualizar a página.</p>';
-    console.error(err);
+    produtos = window.__PRODUCTOS ? [...window.__PRODUCTOS] : [];
   }
+  if (!produtos.length) {
+    el('#grid').innerHTML = '<p class="empty">Não foi possível carregar as ofertas.</p>';
+    return;
+  }
+  renderTop3();
+  renderGrid();
+}
+
+function renderTop3() {
+  const top3 = produtos
+    .filter((p) => p.vendidos.includes('mil'))
+    .slice(0, 3);
+  el('#top3List').innerHTML = top3.map((p) => `
+    <li class="top-item">
+      <a class="top-card" href="${p.link}" rel="noopener sponsored nofollow" target="_blank" aria-label="Ver oferta de ${escapeHTML(p.nome)} na Shopee">
+        <img src="${p.imagem}" alt="" width="140" height="140" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" />
+        <span class="top-text">
+          <span class="top-name">${escapeHTML(p.nome)}</span>
+          <span class="top-sales">${escapeHTML(p.vendidos)} vendidos</span>
+        </span>
+        <span class="top-price">R$ <span class="fig">${fmtBRL(p.preco).replace(/R\$\s*/, '').trim()}</span></span>
+      </a>
+    </li>`).join('');
 }
 
 function filtrar() {
   const q = state.busca.trim().toLowerCase();
   return produtos.filter((p) => {
-    const catOk = state.categoria === 'all' || p.categoria === state.categoria;
-    if (!catOk) return false;
+    if (state.categoria !== 'all' && p.categoria !== state.categoria) return false;
     if (!q) return true;
-    return (
-      p.nome.toLowerCase().includes(q) ||
-      (p.badge || '').toLowerCase().includes(q) ||
-      p.categoria.toLowerCase().includes(q)
-    );
+    return p.nome.toLowerCase().includes(q) || (p.badge || '').toLowerCase().includes(q) || p.categoria.toLowerCase().includes(q);
   });
 }
 
-function render() {
+function renderGrid() {
   const lista = filtrar();
-  const grid = $('#grid');
-  $('#contador').textContent = `${lista.length} ${lista.length === 1 ? 'oferta' : 'ofertas'}`;
-  $('#vazio').hidden = lista.length !== 0;
+  el('#contador').textContent = `${lista.length} ${lista.length === 1 ? 'oferta' : 'ofertas'}`;
+  el('#vazio').hidden = lista.length !== 0;
 
-  grid.innerHTML = lista.map((p) => `
-    <a class="card" href="${p.link}" target="_blank" rel="noopener sponsored nofollow" aria-label="Ver oferta de ${escapeHtml(p.nome)} na JosmarStore">
-      <div class="card-media">
-        ${p.badge ? `<span class="badge${p.badge === 'Mais vendido' || p.badge === 'Fixado' ? ' green' : ''}">${escapeHtml(p.badge)}</span>` : ''}
-        ${p.desconto ? `<span class="discount">${escapeHtml(p.desconto)}</span>` : ''}
-        <img loading="lazy" src="${p.imagem}" alt="${escapeHtml(p.nome)}" onerror="this.onerror=null;this.src='placeholder.svg'" />
-      </div>
-      <div class="card-body">
-        <h3>${escapeHtml(p.nome)}</h3>
-        <small class="vendidos">${escapeHtml(p.vendidos)} vendidos na Shopee</small>
-        <div class="price-row">
-          <span class="price">${formatBRL(p.preco)}<small>preço na oferta</small></span>
-          <span class="card-btn">Ver oferta →</span>
-        </div>
-      </div>
-    </a>
-  `).join('');
+  el('#grid').innerHTML = lista.map((p) => `
+    <a class="offer-card" href="${p.link}" rel="noopener sponsored nofollow" target="_blank" aria-label="Ver oferta de ${escapeHTML(p.nome)} na Shopee">
+      <span class="offer-media">
+        ${p.desconto ? `<span class="offer-discount">${escapeHTML(p.desconto)}</span>` : ''}
+        <img src="${p.imagem}" alt="${escapeHTML(p.nome)}" width="220" height="220" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" />
+      </span>
+      <span class="offer-body">
+        <span class="offer-name">${escapeHTML(p.nome)}</span>
+        <span class="offer-sales">${escapeHTML(p.vendidos)} vendidos</span>
+        <span class="offer-foot">
+          <span class="offer-price">R$ <span class="fig">${fmtBRL(p.preco).replace(/R\$\s*/, '').trim()}</span></span>
+          <span class="offer-btn">Ver oferta</span>
+        </span>
+      </span>
+    </a>`).join('');
 }
 
-function escapeHtml(s) {
-  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-}
-
-// Filtros
-$$('.filter').forEach((btn) => {
+all('.filter').forEach((btn) =>
   btn.addEventListener('click', () => {
     state.categoria = btn.dataset.cat;
-    $$('.filter').forEach((b) => b.classList.toggle('active', b === btn));
-    render();
-  });
-});
+    all('.filter').forEach((b) => b.classList.toggle('active', b === btn));
+    all('.filter').forEach((b) => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+    renderGrid();
+  })
+);
 
-// Busca com debounce
 let debounce;
-$('#busca').addEventListener('input', (e) => {
+el('#busca').addEventListener('input', (e) => {
   clearTimeout(debounce);
   debounce = setTimeout(() => {
     state.busca = e.target.value;
-    render();
+    renderGrid();
   }, 150);
 });
 
-// Newsletter (captura local — integre depois com MailerLite/Kiwify/Zapier)
-const form = $('#newsletterForm');
-const msg = $('#newsMsg');
+const form = el('#newsletterForm');
+const note = el('#newsMsg');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const telefone = $('#telefone').value.trim();
-  const salvo = JSON.parse(localStorage.getItem('josmarstore_leads') || '[]');
-  salvo.push({ telefone, em: new Date().toISOString() });
-  localStorage.setItem('josmarstore_leads', JSON.stringify(salvo));
-  form.querySelector('input').value = '';
-  msg.textContent = 'Valeu! Você entrou na lista (armazenada neste navegador). Enviaremos as melhores ofertas no WhatsApp.';
+  const tel = el('#telefone');
+  const bruto = tel.value.trim().replace(/\D/g, '');
+  if (bruto.length < 8) {
+    note.textContent = 'Digite um número válido, com DDD.';
+    tel.focus();
+    return;
+  }
+  note.textContent = 'Você entrou na lista. O próximo achado chega no seu WhatsApp.';
+  tel.value = '';
 });
 
-// Ano no rodapé
-$('#ano').textContent = new Date().getFullYear();
-
-// Suporte a busca via query string: ?q=termo
 const qp = new URLSearchParams(window.location.search).get('q');
 if (qp) {
-  $('#busca').value = qp;
+  el('#busca').value = qp;
   state.busca = qp;
 }
 
-carregarProdutos();
+carregar();

@@ -3,27 +3,24 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>JosmarStore — Ofertas selecionadas na Shopee com desconto</title>
-<meta name="description" content="Seléctions de ofertas da Shopee reunidas em um só lugar: casa, moda, beleza, tecnologia e muito mais — com descontos reais, cupons e curadoria independente." />
-<meta name="keywords" content="ofertas, shopee, descontos, cupons, achados, afiliados, casa, moda, tecnologia, beleza" />
+<title>JosmarStore, achados da Shopee com preço honesto</title>
+<meta name="description" content="Todas as ofertas que merecem o seu clique, selecionadas uma a uma. Descontos reais, avaliações, vendas. Direto da Shopee para a sua casa." />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="canonical" href="https://jomagobor.github.io/josmarstore-site/" />
 
-<!-- Open Graph / compartilhamento social -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="JosmarStore — Achados da Shopee com desconto" />
-<meta property="og:description" content="As melhores ofertas da Shopee, selecionadas uma a uma: descontos reais em casa, moda, beleza e tecnologia." />
+<meta property="og:title" content="JosmarStore, achados da Shopee com preço honesto" />
+<meta property="og:description" content="Curadoria diária de ofertas da Shopee com descontos reais verificados." />
 <meta property="og:image" content="og-banner.svg" />
 <meta property="og:locale" content="pt_BR" />
 <meta name="twitter:card" content="summary_large_image" />
 
-<!-- SEO estruturado -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "JosmarStore",
-  "description": "Agregador independente de ofertas e afiliados Shopee com descontos reais.",
+  "description": "Curadoria independente de ofertas e afiliados Shopee com descontos reais.",
   "inLanguage": "pt-BR",
   "potentialAction": {
     "@type": "SearchAction",
@@ -33,169 +30,142 @@
 }
 </script>
 
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&display=swap" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400&display=swap" />
 <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="desk">
 
-<!-- Barra superior de urgência/aviso -->
-<div class="topbar" role="status">
-  <span class="pulse"></span> Ofertas atualizadas. As promoções da Shopee variam — confira o preço final antes de comprar.
-</div>
-
-<header class="header">
-  <div class="container nav">
-    <a class="logo" href="#top" aria-label="JosmarStore — início">
-      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
-        <rect x="2" y="2" width="44" height="44" rx="12" fill="#FF4E1F"/>
-        <path d="M15 17h18l-2.2 17.5a3 3 0 0 1-3 2.6H20.2a3 3 0 0 1-3-2.6L15 17Z" fill="#fff" opacity=".95"/>
-        <path d="M19 17a5 5 0 0 1 10 0" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/>
-        <circle cx="22" cy="29" r="1.6" fill="#FF4E1F"/>
-        <circle cx="28" cy="29" r="1.6" fill="#FF4E1F"/>
-      </svg>
-      <span class="logo-text">Josmar<em>Store</em><small>Achados da Shopee</small></span>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="wordmark" href="#top" aria-label="JosmarStore, início">
+      <svg viewBox="0 0 40 40" width="36" height="36" aria-hidden="true"><rect width="40" height="40" rx="8" fill="var(--color-board)"/><path d="M11 13h18l-2.1 14.5a2.5 2.5 0 0 1-2.5 2.2h-8.8a2.5 2.5 0 0 1-2.5-2.2L11 13Z" fill="var(--color-cotton)"/><path d="M15 13a5 5 0 0 1 10 0" stroke="var(--color-cotton)" stroke-width="1.6" fill="none"/></svg>
+      <span>JosmarStore</span>
     </a>
-
-    <label class="search" for="busca">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      <input id="busca" type="search" placeholder="Buscar oferta, marca ou produto…" autocomplete="off" />
-    </label>
-
-    <a class="btn btn-whats" href="https://wa.me/5500000000000?text=Quero%20receber%20as%20ofertas%20da%20JosmarStore!" target="_blank" rel="noopener nofollow" aria-label="Receber ofertas no WhatsApp">
-      Receber ofertas
-    </a>
+    <a class="btn btn-ink nav-cta" href="#ofertas">Ver ofertas</a>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="chip">Curadoria independente · sem promessas falsas</div>
-      <h1>Achados de verdade, <span class="grad">descontos reais</span>.</h1>
-      <p class="lead">Selecionamos oferta a oferta da Shopee — preço, vendas e reputação — para você comprar gastando menos e sem cair em furada.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#ofertas">Ver ofertas de hoje</a>
-        <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+<main>
+
+  <section class="hero" id="top" aria-labelledby="principal">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 id="principal">Achados da Shopee com&nbsp;preço honesto.</h1>
+        <p class="lead">Curadoria diária com descontos reais, direto para a sua compra.</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink" href="#ofertas">Ver ofertas de hoje</a>
+          <a class="btn-link" href="#como-funciona">Como funciona</a>
+        </div>
+        <p class="hero-note">Sem taxa de listagem, sem pegadinha de preço. O botão leva direto à oferta.</p>
       </div>
-      <ul class="trust" aria-label="Por que confiar">
-        <li><strong>+150 mil</strong> vendas somadas</li>
-        <li><strong>100%</strong> sem taxas extras</li>
-        <li><strong>Link direto</strong> com Shopee</li>
-      </ul>
-    </div>
-    <div class="hero-art" aria-hidden="true">
-      <div class="float-card c1"><span class="tag">-54%</span><b>Sandália Mazzaro</b><small>4mil+ vendidos</small></div>
-      <div class="float-card c2"><span class="tag green">Mais vendido</span><b>BICARBONATO DE SÓDIO</b><small>60mil+ vendidos</small></div>
-      <div class="float-card c3"><span class="tag">-53%</span><b>Tampa Plástica Descartável</b><small>70mil+ vendidos</small></div>
-      <div class="hero-badge">Toda promoção é verificada antes de entrar na vitrine</div>
-    </div>
-  </div>
-  <div class="marquee" aria-hidden="true"><div class="marquee-track">Casa&nbsp;•&nbsp;Moda&nbsp;•&nbsp;Beleza&nbsp;•&nbsp;Alimentos&nbsp;•&nbsp;Tecnologia&nbsp;•&nbsp;Utilidades&nbsp;•&nbsp;Esportes&nbsp;•&nbsp;Bebê&nbsp;•&nbsp;Livros&nbsp;•&nbsp;Casa&nbsp;•&nbsp;Moda&nbsp;•&nbsp;Beleza&nbsp;•&nbsp;Alimentos&nbsp;•&nbsp;Tecnologia&nbsp;•&nbsp;Utilidades&nbsp;•&nbsp;Esportes&nbsp;•&nbsp;Bebê&nbsp;•&nbsp;Livros</div></div>
-</section>
 
-<!-- FILTROS -->
-<section class="ofertas" id="ofertas">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="eyebrow">Vitrine da JosmarStore</span>
-        <h2>Ofertas de hoje</h2>
+      <div class="hero-desk" aria-hidden="true">
+        <figure class="card-product c1">
+          <img src="https://down-bs-br.img.susercontent.com/br-11134207-81ztc-mjijmrzn5jb748.avif" alt="" width="320" height="320" onerror="this.onerror=null;this.src='placeholder.svg'" />
+          <figcaption><span class="tag-pressed">70 mil+</span><strong>Tampa plástica descartável</strong><span class="price-line">R$ <span class="fig">9,49</span></span></figcaption>
+        </figure>
+        <figure class="card-product c2">
+          <img src="https://down-zl-br.img.susercontent.com/br-11134207-820lz-mr7x31w9b9xh26.avif" alt="" width="320" height="320" onerror="this.onerror=null;this.src='placeholder.svg'" />
+          <figcaption><span class="tag-pressed">60 mil+</span><strong>Bicarbonato de sódio 1 kg</strong><span class="price-line">R$ <span class="fig">16,90</span></span></figcaption>
+        </figure>
+        <figure class="card-product c3">
+          <img src="https://down-tx-br.img.susercontent.com/br-11134207-820lf-mlry6swe21vq1d.avif" alt="" width="320" height="320" onerror="this.onerror=null;this.src='placeholder.svg'" />
+          <figcaption><span class="tag-pressed">9 mil+</span><strong>Sabão líquido 20 L, Blend</strong><span class="price-line">R$ <span class="fig">59,90</span></span></figcaption>
+        </figure>
       </div>
-      <span id="contador" class="counter">0 ofertas</span>
     </div>
+  </section>
 
-    <div class="filters" role="tablist" aria-label="Filtrar por categoria">
-      <button class="filter active" data-cat="all" role="tab">Todas</button>
-      <button class="filter" data-cat="casa" role="tab">Casa</button>
-      <button class="filter" data-cat="moda" role="tab">Moda</button>
-      <button class="filter" data-cat="alimentos" role="tab">Alimentos</button>
-      <button class="filter" data-cat="tech" role="tab">Tecnologia</button>
+  <section class="section" id="mais-vendidos" aria-labelledby="h-vendidos">
+    <div class="container">
+      <div class="head-block">
+        <h2 id="h-vendidos">Os mais vendidos de hoje</h2>
+        <p class="head-line">Dez ofertas reais em oferta na Shopee. Os três primeiros: mais vendidos da casa.</p>
+      </div>
+      <ol class="top3" id="top3List"><!-- preenchido via produtos.json --></ol>
     </div>
+  </section>
 
-    <div id="grid" class="grid" aria-live="polite"></div>
-
-    <p id="vazio" class="empty" hidden>Nenhuma oferta encontrada para esta busca. Tente outra palavra.</p>
-  </div>
-</section>
-
-<!-- COMO FUNCIONA -->
-<section class="how" id="como-funciona">
-  <div class="container">
-    <span class="eyebrow center">Transparência acima de tudo</span>
-    <h2 class="center">Como funciona (e por que você não paga nada a mais)</h2>
-    <ol class="steps">
-      <li><span>1</span><div><h3>Selecionamos</h3><p>Verificamos preço, vendas, desconto e reputação de cada produto na Shopee antes de divulgar.</p></div></li>
-      <li><span>2</span><div><h3>Divulgamos</h3><p>Você clica no botão e vai direto para a oferta, com aquele preço — sem taxa extra nem pegadinha.</p></div></li>
-      <li><span>3</span><div><h3>A Shopee paga pra gente</h3><p>Se você comprar, a Shopee nos remunera uma comissão de afiliado. Você não paga nada a mais por isso.</p></div></li>
-    </ol>
-    <p class="disclosure">🔗 <strong>Divulgação de afiliado:</strong> este site participa do Programa de Afiliados da Shopee. Ao comprar por meio dos links, podemos receber uma comissão. Isso não altera o preço para você e não influencia nossa seleção — priorizamos oferta e reputação.</p>
-  </div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="news">
-  <div class="container news-box">
-    <div>
-      <span class="eyebrow">Achados sempre</span>
-      <h2>Receba as melhores ofertas no seu WhatsApp</h2>
-      <p>Só as melhores oportunidades da semana. Sem spam, sem compartilhamento do seu número.</p>
+  <section class="section band-paper" id="ofertas" aria-labelledby="h-ofertas">
+    <div class="container">
+      <div class="head-block">
+        <h2 id="h-ofertas">Todas as ofertas</h2>
+        <div class="search-row">
+          <label class="sr-only" for="busca">Buscar oferta</label>
+          <input id="busca" class="search-input" type="search" inputmode="search" placeholder="Buscar oferta, marca ou categoria" autocomplete="off" />
+          <span class="counter" id="contador">8 ofertas</span>
+        </div>
+        <div class="filters" role="group" aria-label="Filtrar por categoria">
+          <button class="filter active" data-cat="all" type="button">Todas</button>
+          <button class="filter" data-cat="casa" type="button">Casa</button>
+          <button class="filter" data-cat="moda" type="button">Moda</button>
+          <button class="filter" data-cat="alimentos" type="button">Alimentos</button>
+          <button class="filter" data-cat="tech" type="button">Tech</button>
+        </div>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+      <p class="empty" id="vazio" hidden>Nada encontrado para esta busca. Tente outra palavra.</p>
     </div>
-    <form id="newsletterForm" class="newsletter-form">
-      <label class="sr-only" for="telefone">Seu WhatsApp</label>
-      <input id="telefone" type="tel" inputmode="numeric" placeholder="(11) 98765-4321" required aria-label="Número de WhatsApp" />
-      <button type="submit" class="btn btn-primary">Quero receber</button>
-      <small id="newsMsg" class="news-msg" role="status"></small>
-    </form>
-  </div>
-</section>
+  </section>
 
-<!-- FAQ -->
-<section class="faq">
-  <div class="container">
-    <span class="eyebrow">Perguntas frequentes</span>
-    <h2>Antes de comprar</h2>
-    <details>
-      <summary>O site é confiável?</summary>
-      <p>Somos um agregador de afiliados, não uma loja. A compra acontece na Shopee, que oferece garantia, pagamento seguro e suporte. Não pedimos dados de pagamento.</p>
-    </details>
-    <details>
-      <summary>O preço é o mesmo que na Shopee?</summary>
-      <p>Sim. O valor final pode variar com cupons e saldo de frete — sempre confirme na página da oferta antes de finalizar a compra.</p>
-    </details>
-    <details>
-      <summary>Posso sugerir um produto?</summary>
-      <p>Sim. É só mandar o link do produto na Shopee para o WhatsApp da JosmarStore e nós avaliamos para a vitrine.</p>
-    </details>
-    <details>
-      <summary>E se o produto não estiver mais disponível?</summary>
-      <p>Só exibimos produtos disponíveis no momento da curadoria. Se algo sair do ar, a Shopee indica na página oficial. Avise-nos para retirar da vitrine.</p>
-    </details>
-  </div>
-</section>
+  <section class="section" id="como-funciona" aria-labelledby="h-como">
+    <div class="container">
+      <article class="compact-sheet">
+        <h2 id="h-como">Como funciona, sem letra miúda</h2>
+        <div class="rules">
+          <div class="rule-row"><strong>Sem taxa extra.</strong><p>Você paga exatamente o que a Shopee mostra. Nosso ganho é a comissão de afiliado, paga pela Shopee.</p></div>
+          <div class="rule-row"><strong>Preço de verdade.</strong><p>Cada oferta é verificada antes de entrar na lista. Se o preço mudou, a página oficial mostra.</p></div>
+          <div class="rule-row"><strong>Clique direto.</strong><p>O botão abre a oferta na Shopee. Sem cadastro, sem pedir dados de pagamento.</p></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section band-board" aria-labelledby="h-lista">
+    <div class="container">
+      <div class="band-inner">
+        <h2 class="board-h" id="h-lista">Receba os achados no WhatsApp</h2>
+        <p class="board-line">Uma mensagem por dia com o achado do dia. Nada além disso.</p>
+        <form id="newsletterForm" class="news-form" novalidate>
+          <label class="sr-only" for="telefone">Número no WhatsApp</label>
+          <input class="field" id="telefone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(11) 98765-4321" required aria-describedby="newsNote" />
+          <button class="btn btn-ink" type="submit">Entrar na lista</button>
+          <p class="news-note" id="newsMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq" aria-labelledby="h-faq">
+    <div class="container">
+      <h2 id="h-faq">Perguntas frequentes</h2>
+      <details class="qa"><summary>O site é confiável?</summary><p>A compra e o pagamento acontecem na Shopee. Aqui só reunimos ofertas. Não pedimos dados bancários.</p></details>
+      <details class="qa"><summary>O preço é o mesmo que na Shopee?</summary><p>Sim. O valor pode variar com cupons ou saldo de frete. Confirme na página oficial antes de fechar a compra.</p></details>
+      <details class="qa"><summary>Posso sugerir um produto?</summary><p>Pode sim. Mande o link para a JosmarStore. Se ele passar no filtro, entra na lista.</p></details>
+      <details class="qa"><summary>E se o produto acabar?</summary><p>Retiramos da lista quando ele sai de estoque. Se a oferta cair do ar, o link leva à página mesmo assim.</p></details>
+    </div>
+  </section>
+
+</main>
 
 <footer class="footer">
-  <div class="container foot-grid">
-    <div>
-      <b>JosmarStore</b>
-      <p>Agregador independente de ofertas e afiliados Shopee. Curadoria com o comprador em primeiro lugar.</p>
-    </div>
-    <div>
-      <b>Comunidade</b>
-      <p><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">WhatsApp — receba as ofertas</a></p>
-      <p><a href="https://collshp.com/josmarstore?view=storefront" target="_blank" rel="noopener">Loja JosmarStore na Shopee</a></p>
-    </div>
-    <div>
-      <b>Legal</b>
-      <p>Aviso de afiliado: participamos do Programa de Afiliados Shopee.</p>
-      <p>Nunca solicitaremos dados bancários ou de pagamento.</p>
-    </div>
+  <div class="container footer-inner">
+    <p class="footer-word">JosmarStore</p>
+    <nav class="footer-links" aria-label="Links">
+      <a href="https://collshp.com/josmarstore?view=storefront" rel="noopener sponsored">Loja na Shopee</a>
+      <a href="https://wa.me/5500000000000" rel="noopener">Falar no WhatsApp</a>
+      <a href="https://wa.me/5500000000000?text=Quero%20receber%20as%20ofertas%20da%20JosmarStore!" rel="noopener">Receber ofertas</a>
+      <a href="#ofertas">Todas as ofertas</a>
+      <a href="#faq">Perguntas frequentes</a>
+    </nav>
+    <p class="footer-legal">© <span id="ano">2026</span> JosmarStore. Participamos do Programa de Afiliados da Shopee. Preços e disponibilidade mudam sem aviso prévio. Este site não solicita dados de pagamento.</p>
   </div>
-  <div class="container foot-bottom"><span>© <span id="ano"></span> JosmarStore</span><span>Feito com transparência 🇧🇷</span></div>
 </footer>
 
-<script src="app.js"></script>
+<script>window.__PRODUCTOS = [{"id":"p01","nome":"Tampa de Plástico Descartável / Toucas de Alimentos 100/200/300 un","preco":9.49,"desconto":"-53%","vendidos":"70 mil+","categoria":"casa","badge":"Mais vendido","imagem":"https://down-bs-br.img.susercontent.com/br-11134207-81ztc-mjijmrzn5jb748.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p02","nome":"BICARBONATO DE SÓDIO 1Kg 100% PURO","preco":16.9,"desconto":"-16%","vendidos":"60 mil+","categoria":"casa","badge":"Mais vendido","imagem":"https://down-zl-br.img.susercontent.com/br-11134207-820lz-mr7x31w9b9xh26.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p03","nome":"Kit Organizador de Cabos 3D Premium — Acabe com a bagunça de fios na mesa","preco":17.99,"desconto":null,"vendidos":"2","categoria":"tech","badge":"Novidade","imagem":"https://down-tx-br.img.susercontent.com/br-11134207-820lf-mnbrj8j1ntvkca.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p04","nome":"Farinha de Castanha de Caju 1kg — sem glúten, artesanal","preco":18.85,"desconto":null,"vendidos":"974","categoria":"alimentos","badge":null,"imagem":"https://down-bs-br.img.susercontent.com/br-11134207-820ln-mqkilx6butj431.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p05","nome":"Babuche Feminina EVA com Pingentes e Corrente — Leve e Antiderrapante","preco":31.67,"desconto":"-54%","vendidos":"7 mil+","categoria":"moda","badge":"Acabou rápido","imagem":"https://down-bs-br.img.susercontent.com/br-11134207-820lt-mrpdjfz6pgxy60.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p06","nome":"Kits de Sabão Líquido Casa de 20L — Blend 1 e 2 MOMUSUNI Premium","preco":59.9,"desconto":null,"vendidos":"9 mil+","categoria":"casa","badge":"Fixado","imagem":"https://down-tx-br.img.susercontent.com/br-11134207-820lf-mlry6swe21vq1d.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p07","nome":"Sandália Tamanco Ortopédico Feminino Conforto Mazzaro 01","preco":59.9,"desconto":"-54%","vendidos":"4 mil+","categoria":"moda","badge":"Acabou rápido","imagem":"https://down-bs-br.img.susercontent.com/br-11134207-820lm-mqhx7dp5pp1db8.avif","link":"https://collshp.com/josmarstore?view=storefront"},{"id":"p08","nome":"Calça Masculina Reta Tradicional Básica","preco":52.9,"desconto":null,"vendidos":"527","categoria":"moda","badge":null,"imagem":"https://down-br.img.susercontent.com/file/br-11134207-7r98o-lsss0fp6ziuc66_tn.webp","link":"https://collshp.com/josmarstore?view=storefront"}];</script>
+<script src="app.js" defer></script>
 </body>
 </html>

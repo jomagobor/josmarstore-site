@@ -84,3 +84,7 @@ Arquivo: `JosmarStore site/` dentro de `/mnt/programas/DeepSeekHarness/Trabalho 
 ## URL no ar
 
 - https://jomagobor.github.io/josmarstore-site/
+
+## Redesign (Hallmark · Coral) — 18/11/2026
+
+Vitrine redesenhada com o Hallmark (tema Coral): hero editorial sobre o “desk de fichas” com os 3 produtos mais vendidos da loja, lista completa de ofertas, filtros, banda de WhatsApp e FAQ. `sloplint`: 0 FAIL, 0 WARN. Ver `.hallmark/` para registro antes/depois.
