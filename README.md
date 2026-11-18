@@ -88,3 +88,11 @@ Arquivo: `JosmarStore site/` dentro de `/mnt/programas/DeepSeekHarness/Trabalho 
 ## Redesign (Hallmark · Coral) — 18/11/2026
 
 Vitrine redesenhada com o Hallmark (tema Coral): hero editorial sobre o “desk de fichas” com os 3 produtos mais vendidos da loja, lista completa de ofertas, filtros, banda de WhatsApp e FAQ. `sloplint`: 0 FAIL, 0 WARN. Ver `.hallmark/` para registro antes/depois.
+
+## Atualização 18/11/2026 (destaques + carrossel diário)
+
+- Hero mostra o logo inline pequeno + carrossel automático com os 8 mais vendidos da loja (rotação `day-of-year` no navegador: a cada dia exibe um conjunto novo)
+- Categorias segregadas (Casa · Alimentos · Moda · Tech) em seções próprias + seção "Todas as ofertas" com busca e filtros
+- 121 produtos reais cadastrados; 8 com preço confirmado (mais quentes); demais com botão "Ver na Shopee" (preços não expostos publicamente pela API de afiliados)
+- Marquee, atribuição de afiliado e marquee animada
+- `products.json` fonte única de verdade do catálogo

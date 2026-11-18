@@ -6,7 +6,7 @@
     "desconto": "-53%",
     "vendidos": "70 mil+",
     "categoria": "casa",
-    "badge": "Mais vendido",
+    "badge": "Fixado",
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-81ztc-mjijmrzn5jb748.avif",
     "link": "https://s.shopee.com.br/5LDV5tWDBK"
   },
@@ -14,7 +14,7 @@
     "id": "p45778917",
     "nome": "Base kit sabão líquido faz 20 litros lava roupas FÁCIL DE FAZER BLEND 1 E 2 MOMUSUNI (B.C) PREMIUM",
     "preco": 59.9,
-    "desconto": "Fixado",
+    "desconto": null,
     "vendidos": "9 mil+",
     "categoria": "casa",
     "badge": "Fixado",
@@ -38,8 +38,8 @@
     "preco": 59.9,
     "desconto": "-54%",
     "vendidos": "4 mil+",
-    "categoria": "casa",
-    "badge": "Acabou rápido",
+    "categoria": "moda",
+    "badge": "Mais vendido",
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820lm-mqhx7dp5pp1db8.avif",
     "link": "https://s.shopee.com.br/AUtybGdcGW"
   },
@@ -49,7 +49,7 @@
     "preco": 18.85,
     "desconto": null,
     "vendidos": "974",
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820ln-mqkilx6butj431.avif",
     "link": "https://s.shopee.com.br/8KpU1CAQMh"
@@ -60,8 +60,8 @@
     "preco": 31.67,
     "desconto": "-54%",
     "vendidos": "7 mil+",
-    "categoria": "casa",
-    "badge": "Acabou rápido",
+    "categoria": "moda",
+    "badge": "Mais vendido",
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-820lt-mrpdjfz6pgxy60.avif",
     "link": "https://s.shopee.com.br/7AdWcrFJUr"
   },
@@ -93,7 +93,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-zl-br.img.susercontent.com/br-11134207-7r98o-manmojilmltl57.avif",
     "link": "https://s.shopee.com.br/50Yy8votDp"
@@ -115,7 +115,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-zl-br.img.susercontent.com/br-11134201-820lb-mqxahqsjsg7bc5.avif",
     "link": "https://s.shopee.com.br/7VGJ7Ow0e8"
@@ -126,7 +126,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-zl-br.img.susercontent.com/br-11134207-820mh-mm7w7v3u25tw5e.avif",
     "link": "https://s.shopee.com.br/2LYCxhKrQx"
@@ -137,7 +137,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-820mc-mm8z1d4hknbaa4",
     "link": "https://s.shopee.com.br/70K2W5PXd3"
@@ -148,7 +148,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-zl-br.img.susercontent.com/br-11134207-820mc-mm8z1d4hknbaa4.avif",
     "link": "https://s.shopee.com.br/9056tfFx4B"
@@ -159,7 +159,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-tx-br.img.susercontent.com/br-11134207-81zto-mkxs227g9m2q07.avif",
     "link": "https://s.shopee.com.br/8V8qIP8o8u"
@@ -170,7 +170,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-tx-br.img.susercontent.com/br-11134207-820le-moy009e8iwat49.avif",
     "link": "https://s.shopee.com.br/7pt9V7hYN5"
@@ -181,7 +181,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-tx-br.img.susercontent.com/sg-11134201-8259j-mqz70hkhiww235.avif",
     "link": "https://s.shopee.com.br/4VchWuIwMV"
@@ -203,7 +203,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-zl-br.img.susercontent.com/br-11134207-820lf-mngd3ilv5vyabf.avif",
     "link": "https://s.shopee.com.br/7pt9UPdKQH"
@@ -214,7 +214,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://down-aka-br.img.susercontent.com/br-11134207-820ls-mmc7cabm0pok4d.avif",
     "link": "https://s.shopee.com.br/5foe8YS2x3"
@@ -258,7 +258,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://down-bs-br.img.susercontent.com/9ad805498b1e3504e1f79de9b7815e02.avif",
     "link": "https://s.shopee.com.br/6feLxTYyeQ"
@@ -280,7 +280,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-lzw43k3haecl96",
     "link": "https://s.shopee.com.br/6fdFM9EeJU"
@@ -346,7 +346,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134201-7r98o-lnutbisib39j9f.avif",
     "link": "https://s.shopee.com.br/3VfuybaDvP"
@@ -412,7 +412,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://down-bs-br.img.susercontent.com/br-11134207-81z1k-mgp7n8g9up6v54.avif",
     "link": "https://s.shopee.com.br/9pZyUQa2BL"
@@ -423,7 +423,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-820mb-mlfny48vszyed8",
     "link": "https://s.shopee.com.br/9Kdkh2C7Ao"
@@ -456,7 +456,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81z1k-me1hpe7lv6kg8d",
     "link": "https://s.shopee.com.br/1gEGnbcJJQ"
@@ -467,7 +467,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-m97av81t8abdfe",
     "link": "https://s.shopee.com.br/BPQDxigF6"
@@ -533,7 +533,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://down-bs-br.img.susercontent.com/sg-11134201-822za-mhw00qwjmewxd7.avif",
     "link": "https://s.shopee.com.br/10yVeJFqlp"
@@ -555,7 +555,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-lzw43k3haecl96",
     "link": "https://s.shopee.com.br/60NAdD6fp1"
@@ -698,7 +698,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/sg-11134201-7renx-m8c8ne7qdez9a8",
     "link": "https://s.shopee.com.br/2LTouvR6B3"
@@ -709,7 +709,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/sg-11134201-7rd5f-m7hussrpee4028",
     "link": "https://s.shopee.com.br/2BAOicRjW2"
@@ -775,7 +775,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-mdfwe3r7lz21e7",
     "link": "https://s.shopee.com.br/1LbL4SSsme"
@@ -863,7 +863,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/sg-11134201-822za-mhw00qwjmewxd7",
     "link": "https://s.shopee.com.br/8fNvnzd4il"
@@ -874,7 +874,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81z1k-mf04zn7hgd8l8a",
     "link": "https://s.shopee.com.br/3LMUmeF2uK"
@@ -929,7 +929,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/sg-11134201-7rd47-lu9di1g2p76439",
     "link": "https://s.shopee.com.br/1Vv9CPDlu2"
@@ -940,7 +940,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81ztc-mivl7lqhrjepb3",
     "link": "https://s.shopee.com.br/6VJNsaBEjH"
@@ -984,7 +984,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81z1k-mgco2t9qhog0e2",
     "link": "https://s.shopee.com.br/7VBv4Q7QhZ"
@@ -995,7 +995,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/9454f18bf791b1845c7d6ffab7d4a4a9",
     "link": "https://s.shopee.com.br/7fVLGj6nMc"
@@ -1006,7 +1006,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-mbo8zhosr0ih2d",
     "link": "https://s.shopee.com.br/7polT26A1f"
@@ -1017,7 +1017,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/30f85632164b30193d50a96187dd2a76",
     "link": "https://s.shopee.com.br/2g6fJXPpVg"
@@ -1025,11 +1025,11 @@
   {
     "id": "p30315510",
     "nome": "Calça Masculina Reta Tradicional Basica",
-    "preco": null,
+    "preco": 52.9,
     "desconto": null,
-    "vendidos": null,
-    "categoria": "casa",
-    "badge": null,
+    "vendidos": "527",
+    "categoria": "moda",
+    "badge": "",
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-lsss0fp6ziuc66",
     "link": "https://s.shopee.com.br/2qQ5VqPCAj"
   },
@@ -1039,7 +1039,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81ztc-mjkudppvrnr769",
     "link": "https://s.shopee.com.br/5Ao3daPbbb"
@@ -1083,7 +1083,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-mbbt58ouwcr331",
     "link": "https://s.shopee.com.br/1VulGZ2ITR"
@@ -1138,7 +1138,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-m97av81t8abdfe",
     "link": "https://s.shopee.com.br/5fkKEVjHwU"
@@ -1248,7 +1248,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "alimentos",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/sg-11134201-7qvfa-lik6kmpy0bgtbf",
     "link": "https://s.shopee.com.br/7VC0xHL98U"
@@ -1270,7 +1270,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81z1k-mgco2t9qhog0e2",
     "link": "https://s.shopee.com.br/W2GcyoqLF"
@@ -1281,7 +1281,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/9454f18bf791b1845c7d6ffab7d4a4a9",
     "link": "https://s.shopee.com.br/16023qkMA"
@@ -1292,7 +1292,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-7r98o-mbo8zhosr0ih2d",
     "link": "https://s.shopee.com.br/BPQEMq71D"
@@ -1303,7 +1303,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/br-11134207-81z1k-mdvp2cinkqv761",
     "link": "https://s.shopee.com.br/808cwLOd3x"
@@ -1314,7 +1314,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "tech",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/cn-11134207-7qukw-lgjmegn52any5e",
     "link": "https://s.shopee.com.br/2VnL0ehEHh"
@@ -1325,7 +1325,7 @@
     "preco": null,
     "desconto": null,
     "vendidos": null,
-    "categoria": "casa",
+    "categoria": "moda",
     "badge": null,
     "imagem": "https://cf.shopee.sg/file/06d32460a2a7e0afa1f01d1e6c2d8bd7",
     "link": "https://s.shopee.com.br/20r4Pjj8Ic"
