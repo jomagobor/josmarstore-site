@@ -80,3 +80,7 @@ o campo `"link"` em `products.json` — o site não precisa de mais nada.
 ---
 
 Arquivo: `JosmarStore site/` dentro de `/mnt/programas/DeepSeekHarness/Trabalho e Finanças/`
+
+## URL no ar
+
+- https://jomagobor.github.io/josmarstore-site/
