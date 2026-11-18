@@ -28,7 +28,7 @@ async function carregar() {
 
 function renderTop3() {
   const top3 = produtos
-    .filter((p) => p.vendidos.includes('mil'))
+    .filter((p) => p.vendidos && p.vendidos.includes('mil'))
     .slice(0, 3);
   el('#top3List').innerHTML = top3.map((p) => `
     <li class="top-item">
@@ -36,9 +36,9 @@ function renderTop3() {
         <img src="${p.imagem}" alt="" width="140" height="140" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" />
         <span class="top-text">
           <span class="top-name">${escapeHTML(p.nome)}</span>
-          <span class="top-sales">${escapeHTML(p.vendidos)} vendidos</span>
+          <span class="top-sales">${p.vendidos ? escapeHTML(p.vendidos) + ' vendidos' : 'Ver oferta'}</span>
         </span>
-        <span class="top-price">R$ <span class="fig">${fmtBRL(p.preco).replace(/R\$\s*/, '').trim()}</span></span>
+        <span class="top-price">${p.preco != null ? 'R$ <span class="fig">' + fmtBRL(p.preco).replace(/R\$\s*/, '').trim() + '</span>' : '<span class="price-unknown">Ver na Shopee</span>'}</span>
       </a>
     </li>`).join('');
 }
@@ -65,9 +65,9 @@ function renderGrid() {
       </span>
       <span class="offer-body">
         <span class="offer-name">${escapeHTML(p.nome)}</span>
-        <span class="offer-sales">${escapeHTML(p.vendidos)} vendidos</span>
+        <span class="offer-sales">${p.vendidos ? escapeHTML(p.vendidos) + ' vendidos' : 'Clique para ver na Shopee'}</span>
         <span class="offer-foot">
-          <span class="offer-price">R$ <span class="fig">${fmtBRL(p.preco).replace(/R\$\s*/, '').trim()}</span></span>
+          <span class="offer-price">${p.preco != null ? 'R$ <span class="fig">' + fmtBRL(p.preco).replace(/R\$\s*/, '').trim() + '</span>' : '<span class="price-unknown">Ver na Shopee</span>'}</span>
           <span class="offer-btn">Ver oferta</span>
         </span>
       </span>

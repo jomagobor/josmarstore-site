@@ -110,6 +110,8 @@ strong { font-weight: 600; }
 .offer-btn { font-size: var(--text-sm); font-weight: 500; color: var(--color-accent-2); }
 .empty { text-align: center; color: var(--color-muted); padding: var(--space-2xl) 0; }
 
+.price-unknown { font-size: var(--text-sm); color: var(--color-accent-2); font-weight: 600; }
+
 /* ---------- Honesty section ---------- */
 .compact-sheet { display: flex; flex-direction: column; gap: var(--space-xl); }
 .head-block h2 { max-width: none; }
