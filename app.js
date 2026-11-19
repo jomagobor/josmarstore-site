@@ -73,23 +73,26 @@ function render() {
   if (els.contador) els.contador.textContent = `${filtered.length} ${filtered.length === 1 ? 'oferta' : 'ofertas'} — preço real Shopee`;
 }
 
+const CATEGORIAS = [
+  { id: 'all',         label: 'Todas' },
+  { id: 'cozinha',     label: 'Cozinha' },
+  { id: 'limpeza',     label: 'Limpeza' },
+  { id: 'banho-e-cama',label: 'Banho e cama' },
+  { id: 'casa',        label: 'Casa' },
+  { id: 'moda',        label: 'Moda' },
+  { id: 'tech',        label: 'Tech' },
+  { id: 'alimentos',   label: 'Alimentos' },
+];
+
 function renderCats() {
-  const counts = {
-    casa: produtos.filter(p => p.categoria === 'casa').length,
-    moda: produtos.filter(p => p.categoria === 'moda').length,
-    alimentos: produtos.filter(p => p.categoria === 'alimentos').length,
-    tech: produtos.filter(p => p.categoria === 'tech').length,
-  };
-  const catDefs = [
-    { id: 'all', label: 'Todas', n: produtos.length },
-    { id: 'casa', label: 'Casa', n: counts.casa },
-    { id: 'alimentos', label: 'Alimentos', n: counts.alimentos },
-    { id: 'moda', label: 'Moda', n: counts.moda },
-    { id: 'tech', label: 'Tech', n: counts.tech },
-  ];
+  const counts = {};
+  for (const c of CATEGORIAS) {
+    counts[c.id] = c.id === 'all' ? produtos.length : produtos.filter(p => p.categoria === c.id).length;
+  }
+  const catDefs = CATEGORIAS.filter(c => c.id === 'all' || counts[c.id] > 0);
   if (els.catsBar) {
     els.catsBar.innerHTML = catDefs.map(c =>
-      `<button class="chip ${c.id === currentCat ? 'active' : ''}" role="tab" aria-selected="${c.id === currentCat ? 'true' : 'false'}" data-cat="${c.id}" type="button">${c.label}<span class="chip-count" style="opacity:.7;font-weight:500;margin-left:4px">${c.n}</span></button>`
+      `<button class="chip ${c.id === currentCat ? 'active' : ''}" role="tab" aria-selected="${c.id === currentCat ? 'true' : 'false'}" data-cat="${c.id}" type="button">${c.label}<span class="chip-count" style="opacity:.7;font-weight:500;margin-left:4px">${counts[c.id]}</span></button>`
     ).join('');
     els.catsBar.querySelectorAll('.chip').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -103,18 +106,18 @@ function renderCats() {
     });
   }
   if (els.categoriasGrid) {
-    const meta = { casa: 'Casa', alimentos: 'Alimentos', moda: 'Moda', tech: 'Tech' };
-    const keys = Object.keys(counts);
+    const keys = CATEGORIAS.filter(c => c.id !== 'all' && counts[c.id] > 0).map(c => c.id);
     els.categoriasGrid.innerHTML = keys.map(k => {
+      const metaLabel = (CATEGORIAS.find(c => c.id === k) || {}).label || k;
       const sample = produtos.find(p => p.categoria === k);
       const img = sample ? sample.imagem : '';
       const featured = produtos.find(p => p.categoria === k && p.desconto) || sample;
       const featuredPrice = featured?.preco != null ? 'R$ ' + fmtPrice(featured.preco) : '';
       return `
-        <a class="card fadeup" href="#ofertas" aria-label="Ver ${escapeAttr(meta[k])} — ${counts[k]} ofertas">
-          <div class="card-img"><img src="${escapeAttr(img)}" alt="${escapeAttr(meta[k])}" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" /></div>
+        <a class="card fadeup" href="#ofertas" aria-label="Ver ${escapeAttr(metaLabel)}: ${counts[k]} ofertas">
+          <div class="card-img"><img src="${escapeAttr(img)}" alt="${escapeAttr(metaLabel)}" loading="lazy" onerror="this.onerror=null;this.src='placeholder.svg'" /></div>
           <div class="card-body">
-            <h3 class="card-title" style="min-height:0">${escapeHTML(meta[k])}</h3>
+            <h3 class="card-title" style="min-height:0">${escapeHTML(metaLabel)}</h3>
             <p class="card-meta">${counts[k]} ofertas</p>
             <div class="card-price-row"><span class="card-price">${escapeHTML(featuredPrice)}</span></div>
             <span class="card-cta">Ver ofertas</span>

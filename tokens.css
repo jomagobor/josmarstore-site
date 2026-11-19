@@ -27,6 +27,13 @@
   --color-success-bg: oklch(26% 0.04 150);
   --color-red: oklch(58% 0.22 28);
   --color-discount: oklch(28% 0.06 75);
+  --color-white: oklch(100% 0 0);
+  --color-live-ring: oklch(66% 0.17 150 / 0.55);
+  --color-hero-badge-bg: oklch(20% 0.05 244);
+  --color-card-img-bg: oklch(22% 0.02 240);
+  --color-gold-ink: oklch(24% 0.055 85);
+  --color-gold-edge: oklch(83% 0.125 85 / 0.35);
+  --color-shopee-shadow: oklch(64% 0.22 38 / 0.35);
   --radius-card: 14px; --radius-input: 12px; --radius-pill: 999px; --radius-chip: 999px; --radius-stock: 10px; --rule-hair: 1px;
   --shadow-card: 0 12px 40px oklch(0% 0 0 / 0.55);
   --shadow-gold: 0 0 0 1px oklch(83% 0.125 85 / 0.35), 0 10px 30px oklch(0% 0 0 / 0.6);
